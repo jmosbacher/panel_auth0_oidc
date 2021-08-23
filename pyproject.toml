@@ -1,7 +1,7 @@
 [tool]
 [tool.poetry]
 name = "panel_auth0_oidc"
-version = "0.1.2"
+version = "0.1.3"
 homepage = "https://github.com/jmosbacher/panel_auth0_oidc"
 description = "Top-level package for Panel Auth0 Oidc."
 authors = ["Yossi Mosbacher <joe.mosbacher@gmail.com>"]
