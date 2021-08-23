@@ -9,7 +9,7 @@ log = logging.getLogger(__name__)
 class OidcAuth0Handler(OAuthIDTokenLoginHandler, OAuth2Mixin):
 
     _AUDIENCE = None
-    
+
     _SCOPE = ['openid', 'email', 'profile']
 
     _USER_KEY = 'email'
@@ -20,7 +20,6 @@ class OidcAuth0Handler(OAuthIDTokenLoginHandler, OAuth2Mixin):
     
     _EXTRA_AUTHORIZE_PARAMS = {
         'grant_type': 'authorization_code',
-        'audience': "https://api.pmts.xenonnt.org",
     }
 
     _OAUTH_ACCESS_TOKEN_URL_ = 'https://{0}.auth0.com/oauth/token'
